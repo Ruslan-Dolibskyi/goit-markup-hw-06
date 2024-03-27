@@ -61,20 +61,19 @@ ol {
 
 .section-title {
   margin-bottom: 8px;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   text-align: center;
   color: var(--navy-blue);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .section-title {
-    text-align: start;
+    text-align: left;
   }
 }
+
 @media only screen and (min-width: 1158px) {
   .section-title {
     font-weight: 500;
@@ -374,7 +373,7 @@ ol {
 }
 
 .hero-title {
-  min-width: 300px;
+  max-width: 320px;
   margin: 0 auto;
   font-size: 36px;
   line-height: 1.11;
@@ -434,9 +433,11 @@ ol {
 }
 
 /* Section 1 */
+
 @media screen and (max-width: 1157px) {
   .strategic {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
@@ -512,6 +513,11 @@ ol {
 @media only screen and (max-width: 1157px) {
   .projects {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .projects {
     padding-bottom: 120px;
   }
 }
@@ -537,6 +543,15 @@ ol {
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.team-name {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 
 .team-card {
@@ -1006,7 +1021,7 @@ ol {
 }
 
 .modal {
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1023,6 +1038,12 @@ ol {
 @media screen and (max-width: 320px) {
   .modal {
     min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
   }
 }
 
@@ -1199,11 +1220,6 @@ input[type='checkbox']:checked {
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-toggle-icon {
   stroke: #2e2f42;
 }
@@ -1305,13 +1321,16 @@ input[type='checkbox']:checked {
   color: #4d5ae5;
 }
 
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 425px) {
   .mobile-contacts-link.accent {
     font-size: 36px;
     line-height: 1.11;
   }
 }
 
-.mobile-socials {
-  gap: 56px;
+@media only screen and (min-width: 425px) {
+  .mobile-socials {
+    gap: 56px;
+    justify-content: flex-start;
+  }
 }
